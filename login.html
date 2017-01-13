@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Komoro Login page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <h1 id="header">Login page</h1>
+      <p>Please enter your username and password</p>
+      <div class="table_content">
+        <form id="login" action="#" method="post">
+          <table class="loginForm">
+            <tr>
+              <th>Employee Type: </th>
+              <td>
+                <select name="Employee" required autofocus>
+                  <option value="" selected>Select Employee Type</option>
+                  <option value="manager">Manager</option>
+                  <option value="commissary">Commissary</option>
+                  <option value="admin">Administrator</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>Username: </th>
+              <td><input type="text" name="username" placeholder="username" required></td>
+            </tr>
+            <tr>
+              <th>Password: </th>
+              <td><input type="password" name="password" required></td>
+            </tr>
+          </table>
+          <div>
+            <input class="btn btn-danger" type="reset" value="Clear">
+            <input class="btn btn-primary" type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+      <!--
+      <img src="styles/komoroLogo.jpg" alt="Komoro Logo" class="ph">
+    -->
+    </div><!--#wrap-->
+  </body>
+</html>
