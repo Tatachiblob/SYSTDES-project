@@ -1,5 +1,73 @@
 $(function() {
-
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    Morris.Area({
+        element: 'morris-monthlySales',
+        data:[
+            {
+                month: '2016-01',
+                ths: 2666,
+                last: 2647
+            }, {
+                month: '2016-02',
+                ths: 2778,
+                last: 2441
+            }, {
+                month: '2016-03',
+                ths: 4912,
+                last: 2501
+            }, {
+                month: '2016-04',
+                ths: 3767,
+                last: 2589
+            }, {
+                month: '2016-05',
+                ths: 6810,
+                last: 6000
+            }, {
+                month: '2016-06',
+                ths: 5670,
+                last: 4293
+            }, {
+                month: '2016-07',
+                ths: 4720,
+                last: 3795
+            }, {
+                month: '2016-08',
+                ths: 5967,
+                last: 5000
+            }, {
+                month: '2016-09',
+                ths: 8902,
+                last: 7999
+            }, {
+                month: '2016-10',
+                ths: 8240,
+                last: 9200
+            }, {
+                month: '2016-11',
+                ths: 10032,
+                last: 9991
+            }, {
+                month: '2016-12',
+                ths: 12318,
+                last: 11892
+            }
+        ],
+        xkey: 'month',
+        ykeys: ['ths', 'last'],
+        labels: ['2016', '2015'],
+        hideHover: 'auto',
+        resize: true,
+        xLabelFormat: function (x) {
+            var month = months[x.getMonth()];
+            return month;
+        },
+        dateFormat: function (x) {
+            var month = months[new Date(x).getMonth()];
+            return month;
+        }
+    });
+    
     Morris.Area({
         element: 'morris-area-chart',
         data: [{

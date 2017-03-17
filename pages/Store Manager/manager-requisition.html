@@ -1,7 +1,12 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 <html>
-    
     <head>
+        <title>Komoro Inventory System</title>
 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +14,6 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Komoro Inventory System</title>
-        
         <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="../../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
         <link href="../../dist/css/sb-admin-2.css" rel="stylesheet">
@@ -24,14 +27,11 @@
         <script src="../../vendor/morrisjs/morris.min.js"></script>
         <script src="../../data/morris-data.js"></script>
         <script src="../../dist/js/sb-admin-2.js"></script>
-        
     </head>
     
     <body>
         
-        <!--#wrapper-->
-        <div id="wrapper">
-            
+        <div id='wrapper'>
             <!-- Navigation -->
             <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
 
@@ -42,7 +42,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="../dashboard.html">Komoro Inventory System</a>
+                    <a class="navbar-brand" href="manager-index.html">Komoro Inventory System</a>
                 </div>
                 <!-- /.navbar-header -->
 
@@ -282,60 +282,13 @@
                             <!--Search Bar-->
 
                             <li>
-                                <a href="../dashboard.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                                <a href="manager-index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                             </li>
-
+                            
                             <li>
-                                <a href="#"><i class="fa fa-fw fa-users"></i> Employees<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="#">Add Employee</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Edit Employee</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">View All Employee</a>
-                                    </li>
-                                </ul>
+                                <a href="manager-requisition.html"><i class="fa fa-support fa-fw"></i> Requsition</a>
                             </li>
-                            <!-- Employee Drop Down-->
-
-                            <li>
-                                <a href="#"><i class="fa fa-fw fa-table"></i> Inventory<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="#"> Manage Inventory<span class="fa arrow"></span></a>
-                                        <ul class="nav nav-third-level">
-                                            <li>
-                                                <a href="#">Adjust Stock Quantity</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">View Stock Availability</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Forcasting</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="#">Add Stock</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Edit Stock</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">View All Stocks</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!--Inventory Dropdown-->
-
-                            <li>
-                                <a href="#"><i class="fa fa-fw fa-dollar"></i> Sales</a>
-                            </li>
-                            <!--Sales-->
-
+                            
                         </ul>
                     </div>
                     <!-- /.sidebar-collapse -->
@@ -344,19 +297,17 @@
                 <!-- /.navbar-static-side -->
 
             </nav>
-            <!-- Navigation -->
-            
-            <!--#page-wrapper-->
-            <div id="page-wrapper">
+            <div id='page-wrapper'>
+                
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Inventory</h1>
+                        <h1 class="page-header">Requsition</h1>
                         <ol class="breadcrumb">
                             <li>
-                                <i class="fa fa-dashboard"></i>  <a href="../dashboard.html">Dashboard</a>
+                                <i class="fa fa-dashboard"></i>  <a href="manager-index.html">Dashboard</a>
                             </li>
                             <li class="active">
-                                <i class="fa fa-table"></i> Inventory
+                                <i class="fa fa-support"></i> Requisition
                             </li>
                         </ol>
                     </div>
@@ -365,129 +316,237 @@
                 <!-- /.row -->
                 
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-book fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">Manage Stocks</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="manageStock.html">
-                                <div class="panel-footer">
-                                    <span class="pull-left">Click Here</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-green">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-search fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">View All Stocks</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="viewStocks.html">
-                                <div class="panel-footer">
-                                    <span class="pull-left">Click Here</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-paperclip fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">View Ending Inventor</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="Inventory Report - Mock Up.pdf">
-                                <div class="panel-footer">
-                                    <span class="pull-left">Click Here</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row-->
-                
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <!-- /CLIENT INPUT -->
+                    <div class="col-lg-8">
+
                         <div class="panel panel-primary">
                             <div class="panel-heading">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-plus-square fa-5x"></i>
-                                    </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">Add Stock</div>
-                                    </div>
-                                </div>
+                                <h3 class="panel-title">SM Megamall Outlet</h3>
                             </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">Click Here</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!--Add Stock Panel-->
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="panel panel-yellow">
-                            <div class="panel-heading">
+                            <div class="panel-body">
+
                                 <div class="row">
-                                    <div class="col-xs-3">
-                                        <i class="fa fa-edit fa-5x"></i>
+
+                                    <div class ="col-md-3">
+                                        <h4>Item Name</h4>
                                     </div>
-                                    <div class="col-xs-9 text-right">
-                                        <div class="huge">Edit Stock</div>
+
+                                    <div class ="col-md-3">
+                                        <h4>Current Quantity</h4>
                                     </div>
+
+                                    <div class ="col-md-3">
+                                        <h4>Stock Control Unit</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4>Adjustments</h4>
+                                    </div>
+
+
                                 </div>
-                            </div>
-                            <a href="#">
-                                <div class="panel-footer">
-                                    <span class="pull-left">Click Here</span>
-                                    <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </a>
+
+                                <div class="row">
+
+                                    <div class ="col-md-3">
+                                        <h4>Prawn</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4 id="r1val">1600</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4>PCS</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <input type="number" class="form-control" id="r1control" placeholder="120" value="1600" />
+                                    </div>
+
+                                </div> <!-- END OF ROW -->
+
+                                <div class="row">
+
+                                    <div class ="col-md-3">
+                                        <h4>Kani</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4 id="r2val">2</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4>KG</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <input type="number" class="form-control" id="r2control" value="2" />
+                                    </div>
+
+
+                                </div> <!-- END OF ROW -->
+
+                                <div class="row">
+
+                                    <div class ="col-md-3">
+                                        <h4>Inari</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4 id="r3val">0</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4>Pack</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <input type="number" class="form-control" id="r3control" value="0" />
+                                    </div>
+
+
+                                </div> <!-- END OF ROW -->
+
+                                <div class="row">
+
+                                    <div class ="col-md-3">
+                                        <h4>Ebiko</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4 id="r4val">3</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4>KG</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <input type="number" class="form-control" id="r4control" value="3"/>
+                                    </div>
+
+
+                                </div> <!-- END OF ROW -->
+
+                                <div class="row">
+
+                                    <div class ="col-md-3">
+                                        <h4>Japanese Flour</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4 id="r5val">160</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4>KG</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <input type="number" class="form-control" id="r5control" value="160"/>
+                                    </div>
+
+                                </div> <!-- END OF ROW -->
+
+                                <div class="row">
+
+                                    <div class ="col-md-3">
+                                        <h4>Bread Crumbs</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4 id="r6val">60</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4>KG</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <input type="number" class="form-control" id="r6control" value="60"/>
+                                    </div>
+
+                                </div> <!-- END OF ROW -->
+
+                                <div class="row">
+
+                                    <div class ="col-md-3">
+                                        <h4>Nori</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4 id="r7val">2000</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4>Sheet</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <input type="number" class="form-control" id="r7control" value="2000"/>
+                                    </div>
+
+                                </div> <!-- END OF ROW -->
+
+                                <div class="row">
+
+                                    <div class ="col-md-3">
+                                        <h4>Ra-yu</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4 id="r8val">3</h4>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <h4>Litter</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <input type="number" class="form-control" id="r8control" value="3"/>
+                                    </div>
+
+                                </div> <!-- END OF ROW -->
+                                
+                                <div class="row">
+
+                                    <div class ="col-md-3">
+                                        <h4>Bonito Flakes</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <h4 id="r9val">6</h4>
+                                    </div>
+                                    
+                                    <div class="col-md-3">
+                                        <h4>KG</h4>
+                                    </div>
+
+                                    <div class ="col-md-3">
+                                        <input type="number" class="form-control" id="r9control" value="6"/>
+                                    </div>
+
+                                </div> <!-- END OF ROW -->
+                                
+                            </div> <!-- END PANEL BODY -->
+
+
                         </div>
+                        <button type="button" class="btn btn-primary" id="SEYB">Send Ending Inventory</button>
+                        <button type="button" class="btn btn-warning" id="RESET">Reset changes</button>
                     </div>
-                    <!--Edit Stock Panel-->
+
+
+
+
 
                 </div>
-                <!-- /.row-->
-            
+                
             </div>
-            <!--#page-wrapper-->
-            
+            <!-- /.page-wrapper -->
         </div>
-        <!--#wrapper-->
+        <!-- /.wrapper -->
         
     </body>
 </html>
